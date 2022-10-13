@@ -2,4 +2,4 @@
 <br>
 <br>
 A Experimental RPG Battle Simulator<br><br><br><br>
-<img src="assets/DEMO.png">
+<img src="assets/DEMO.PNG">
