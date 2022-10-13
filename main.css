@@ -50,6 +50,7 @@ body{
     display: inline-flex;
     justify-content: space-between;
     margin-left: 20px;
+    border-radius: 10px;
 }
 
 #fight{
@@ -60,6 +61,7 @@ body{
     font-family: 'Silkscreen', cursive; 
     padding-left: 50px;
     padding-right: 50px;
+    border-radius: 10px;
 }
 
 #run{
@@ -70,6 +72,7 @@ body{
     font-family: 'Silkscreen', cursive; 
     padding-left: 50px;
     padding-right: 50px;
+    border-radius: 10px;
 }
 
 #attack{
@@ -81,6 +84,7 @@ body{
     padding-left: 50px;
     padding-right: 50px;
     display: none;
+    border-radius: 10px;
 }
 
 
@@ -93,6 +97,7 @@ body{
     padding-left: 50px;
     padding-right: 50px;
     display: none;
+    border-radius: 10px;
 }
 
 #hit{
