@@ -1,2 +1,7 @@
 # RPG_Battle_SIM
- Experimental
+<br>
+<br>
+A Experimental RPG Battle Simulator
+<br>
+<br>
+<img src="assets/DEMO.jpg>
