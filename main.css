@@ -1,0 +1,105 @@
+html{
+    height: 100%;
+    
+}
+
+body{
+    margin: 0%;
+    padding: 0%;
+    background: url("assets/background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 90%;
+}
+.textbox{
+    background-color: white;
+    position: absolute;
+    left:4%;
+    bottom: 40px;
+    height: 20%;
+    width: 92%;
+    opacity: 80%;
+    border-radius: 10px;
+}
+
+#text{
+    margin: 20px;
+}
+
+
+#text{
+    text-align: center;
+    font-family: 'Silkscreen', cursive;
+    opacity: 100%;
+    font-size: 18px;
+    cursor: pointer;
+    /* display: none; */
+}
+
+#slime{
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    height: 30%;
+    width: auto;
+
+}
+
+.input{
+    display: inline-flex;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+#fight{
+    height: 15vh;
+    position: fixed;
+    left: 10vw;
+    text-align: center;
+    font-family: 'Silkscreen', cursive; 
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#run{
+    position: fixed;
+    height: 15vh;
+    right: 10vw;
+    text-align: center;
+    font-family: 'Silkscreen', cursive; 
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#attack{
+    height: 15vh;
+    position: fixed;
+    left: 10vw;
+    text-align: center;
+    font-family: 'Silkscreen', cursive; 
+    padding-left: 50px;
+    padding-right: 50px;
+    display: none;
+}
+
+
+#defend{
+    position: fixed;
+    height: 15vh;
+    right: 10vw;
+    text-align: center;
+    font-family: 'Silkscreen', cursive; 
+    padding-left: 50px;
+    padding-right: 50px;
+    display: none;
+}
+
+#hit{
+    position: fixed;
+    height: 40%;
+    right: 10%;
+    top: 7%;
+    width: auto;
+    /* display: none; */
+}

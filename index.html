@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>RPG_Battle_Sim</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="textbox">
+        <p id="text" onclick="intro()"><br><br>Click Me</p>
+        <div class="input">
+            <button id="fight" style="display: none;" onclick="fight()">Fight</button>
+        </div>
+        <div class="input">
+            <button id="run" style="display: none;" onclick="run()">Run</button>
+        </div>
+        <div class="input">
+            <button id="attack" onclick="attack()">Attack</button>
+        </div>
+        <div class="input">
+            <button  id="defend" onclick="heal()">Heal</button>
+        </div>
+    </div>
+    <div class="slime">
+        <img src="assets/slime.gif" style="opacity: 0%;" alt="slime" id="slime">
+    </div>
+    <div class="hit">
+        <img src="assets/hit.gif" style="display: none;" alt="hit" id="hit">
+    </div>
+</body>
+</html>
