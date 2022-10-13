@@ -8,10 +8,10 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms-1000));
 }
 
-let slimehealth = 10;
+let slimehealth = 100;
 console.log(slimehealth)
 
-let playerhealth = 10;
+let playerhealth = 100;
 console.log(playerhealth)
 
 
