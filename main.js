@@ -150,7 +150,7 @@ function run(){
     hidefight()
     hidetext()
     sleep(2000).then(() => showtext())
-    sleep(2000).then(() => document.getElementById("text").innerText = "You can't Run Away Now!"); 
+    sleep(2000).then(() => document.getElementById("text").innerText = "Don't Run, Be Brave!"); 
     sleep(4000).then(() => endturnplayer()); 
 }
 
