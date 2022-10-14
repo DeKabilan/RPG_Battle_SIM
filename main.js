@@ -37,11 +37,14 @@ function hidefight(){
 }
 
 function intro(){
+    
+    sleep(0).then(() => document.getElementById("start").style.display = "none");
     sleep(2000).then(() => document.getElementById("text").innerText = "This is an Experimental RPG Battle Simulator Project");
     sleep(2000).then(() => document.getElementById("slime").style.opacity = "0%");
     sleep(5000).then(() => document.getElementById("text").innerText = "Lets start with a simple battle");
     sleep(7500).then(() => document.getElementById("text").innerText = "A wild Slime appeared!");
     sleep(7500).then(() => showslime());
+    sleep(7500).then(() => showhealth());
     sleep(11000).then(() => document.getElementById("text").style.display = "none"); 
     sleep(12000).then(() => document.getElementById("fight").style.display = "block"); 
     sleep(12000).then(() => document.getElementById("run").style.display = "block"); 
@@ -76,11 +79,12 @@ function damagecalc(){
     sleep(1500).then(() => document.getElementById("text").innerText = "The Slime Took "+damages+" Damage");  
     sleep(1500).then(() => showtext());
     sleep(3500).then(() => hidetext());
+    sleep(1500).then(() => document.getElementById("healthslime2").style.height = (slimehealth+"px"));  
     if (slimehealth<0){   
         sleep(1000).then(() => endslime()); 
     }
-    else {
-        sleep(3500).then(() => endturnplayer());       
+    else {     
+        sleep(3500).then(() => endturnplayer());  
     }
     return slimehealth      
 }
@@ -162,6 +166,7 @@ function endslime(){
     sleep(1000).then(() => hidetext());
     sleep(3500).then(() => showtext());
     sleep(3500).then(() => hideslime());
+    sleep(3500).then(() => hidehealth());
 }
 
 function hideslime(){   
@@ -181,4 +186,33 @@ function showslime(){
     sleep(2100).then(() => document.getElementById("slime").style.opacity = "80%");
     sleep(2400).then(() => document.getElementById("slime").style.opacity = "100%");
 
+}
+function showhealth(){   
+    sleep(1000).then(() => document.getElementById("healthslime").style.opacity = "0%");
+    sleep(1300).then(() => document.getElementById("healthslime").style.opacity = "20%");
+    sleep(1600).then(() => document.getElementById("healthslime").style.opacity = "40%");
+    sleep(1900).then(() => document.getElementById("healthslime").style.opacity = "60%");
+    sleep(2100).then(() => document.getElementById("healthslime").style.opacity = "80%");
+    sleep(2400).then(() => document.getElementById("healthslime").style.opacity = "100%");
+    sleep(1000).then(() => document.getElementById("healthslime2").style.opacity = "0%");
+    sleep(1300).then(() => document.getElementById("healthslime2").style.opacity = "20%");
+    sleep(1600).then(() => document.getElementById("healthslime2").style.opacity = "40%");
+    sleep(1900).then(() => document.getElementById("healthslime2").style.opacity = "60%");
+    sleep(2100).then(() => document.getElementById("healthslime2").style.opacity = "80%");
+    sleep(2400).then(() => document.getElementById("healthslime2").style.opacity = "100%");
+
+}
+function hidehealth(){   
+    sleep(1300).then(() => document.getElementById("healthslime").style.opacity = "100%");
+    sleep(1600).then(() => document.getElementById("healthslime").style.opacity = "80%");
+    sleep(1900).then(() => document.getElementById("healthslime").style.opacity = "60%");
+    sleep(2100).then(() => document.getElementById("healthslime").style.opacity = "40%");
+    sleep(2400).then(() => document.getElementById("healthslime").style.opacity = "20%");
+    sleep(2700).then(() => document.getElementById("healthslime").style.opacity = "0%");
+    sleep(1300).then(() => document.getElementById("healthslime2").style.opacity = "100%");
+    sleep(1600).then(() => document.getElementById("healthslime2").style.opacity = "80%");
+    sleep(1900).then(() => document.getElementById("healthslime2").style.opacity = "60%");
+    sleep(2100).then(() => document.getElementById("healthslime2").style.opacity = "40%");
+    sleep(2400).then(() => document.getElementById("healthslime2").style.opacity = "20%");
+    sleep(2700).then(() => document.getElementById("healthslime2").style.opacity = "0%");
 }

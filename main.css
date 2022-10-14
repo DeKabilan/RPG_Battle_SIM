@@ -106,5 +106,42 @@ body{
     right: 10%;
     top: 7%;
     width: auto;
-    /* display: none; */
+}
+
+#start{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    font-family: 'Silkscreen', cursive;
+    opacity: 100%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#healthslime2{
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    height: 100px;
+    width: 7px;
+    background-color: red;
+    border-radius: 10px;
+    opacity: 0%;
+}
+#healthslime{
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    height: 100px;
+    width: 7px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    opacity: 0%;
+}
+
+.healthbar{
+    position: absolute;
+    right: 8%;
+    bottom: 75%;
 }

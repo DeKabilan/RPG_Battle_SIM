@@ -13,7 +13,8 @@
 </head>
 <body>
     <div class="textbox">
-        <p id="text" onclick="intro()"><br><br>Click Me</p>
+        <button id="start" onclick="intro()">Click Me</button>
+        <p id="text"><br><br></p>
         <div class="input">
             <button id="fight" style="display: none;" onclick="fight()">Fight</button>
         </div>
@@ -32,6 +33,10 @@
     </div>
     <div class="hit">
         <img src="assets/hit.gif" style="display: none;" alt="hit" id="hit">
+    </div>
+    <div class="healthbar">
+        <p id="healthslime" style="height: 100px;"></p>
+        <p id="healthslime2" style="height: 100px;" ></p>
     </div>
 </body>
 </html>
