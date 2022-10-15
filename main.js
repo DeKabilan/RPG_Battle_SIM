@@ -96,6 +96,7 @@ function healcalc(){
     sleep(1500).then(() => document.getElementById("text").innerText = "You Healed "+damages+" Health Points");  
     sleep(1500).then(() => showtext());
     sleep(3500).then(() => hidetext());
+    sleep(4000).then(() => endturnplayer());
 
     return playerhealth   
 }
@@ -159,7 +160,7 @@ function endplayer(){
     hidefight();
     hidetext();
     sleep(2000).then(() => showtext());
-    sleep(2000).then(() => document.getElementById("text").innerText = "You Lost!"); ;
+    sleep(2000).then(() => document.getElementById("text").innerText = "You Lost!");
 }
 function endslime(){
     hideattack();
@@ -167,6 +168,15 @@ function endslime(){
     sleep(3500).then(() => showtext());
     sleep(3500).then(() => hideslime());
     sleep(3500).then(() => hidehealth());
+    sleep(6200).then(() => wonmessage()); 
+}
+
+function wonmessage(){
+    sleep(1000).then(() => document.getElementById("text").innerText = "The Slime Fainted!");
+    sleep(2000).then(() => document.getElementById("text").innerText = "You Won!");
+    sleep(3000).then(() => document.getElementById("text").innerText = "Developed by: @DeKabilan");
+
+    
 }
 
 function hideslime(){   
@@ -176,7 +186,7 @@ function hideslime(){
     sleep(2100).then(() => document.getElementById("slime").style.opacity = "40%");
     sleep(2400).then(() => document.getElementById("slime").style.opacity = "20%");
     sleep(2700).then(() => document.getElementById("slime").style.opacity = "0%");
-    sleep(3000).then(() => document.getElementById("text").innerText = "You Won!"); 
+
 }
 function showslime(){   
     sleep(1000).then(() => document.getElementById("slime").style.opacity = "0%");
